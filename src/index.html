@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Your one-stop shop for clothing and accessories">
+  <title>Fashion Store - Home</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style>
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      padding: 15px;
+    }
+
+    .card-img-top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      background-color: #f8f9fa;
+    }
+
+    .card-body {
+      padding: 15px 0;
+    }
+
+    .card-links {
+      margin-top: 15px;
+    }
+
+    .container:not(.navbar) {
+      display: none;
+    }
+
+    .container.home {
+      display: block;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 20px 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      background-color: #3a3a3a;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#" onclick="hidePages(), showHomePage(); return false;">Home</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Shop <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#" onclick="hidePages(), showMerchPage(); return false;">Merch</a></li>
+              <li><a href="#" onclick="hidePages(), showTshirtsPage(); return false;">Shirts</a></li>
+              <li><a href="#" onclick="hidePages(), showPantsPage(); return false;">Pants</a></li>
+            </ul>
+          </li>
+          <li><a href="#" onclick="hidePages(), showSellPage(); return false;">Sell</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">About<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#" onclick="hidePages(), showHistoryPage(); return false;">History</a></li>
+              <li><a href="#" onclick="hidePages(), showMissionPage(); return false;">Mission</a></li>
+            </ul>
+          </li>
+          <li><a href="#" onclick="hidePages(), showContactPage(); return false;">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" onclick="showSignupModal(); return false;"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="#" onclick="showLoginModal(); return false;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+        <form class="navbar-form navbar-left searchform" action="https://youtu.be/dQw4w9WgXcQ?si=9x2UC-0T3_vQ_nP5" method="get" target="_blank">
+          <div class="input-group">
+            <input type="text" class="form-control search" placeholder="Search products..." name="q" required>
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="submit">
+                <i class="glyphicon glyphicon-search"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Page -->
+  <div class="container home">
+    <h3>Welcome Home!</h3>
+    <p>Whether you have come to buy, sell, or learn more about our company we will always be here to fulfill your needs!</p>
+    <p>We hope you stay :)</p>
+  </div>
+
+  <!-- Merch Page -->
+  <div class="container merch">
+    <h3>Merch</h3>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-img-top">
+            <span style="font-size:100px;">&#128083;</span>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Sun Glasses</h5>
+            <p class="card-text">The perfect sun glasses for a sun day!</p>
+            <div class="card-links">
+              <a href="#" class="btn btn-primary">View Details</a>
+              <a href="#" class="btn btn-default">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-img-top">
+            <span style="font-size:100px;">&#129506;</span>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Baseball Cap</h5>
+            <p class="card-text">Keeps the sun out of your eyes and off your head.</p>
+            <div class="card-links">
+              <a href="#" class="btn btn-primary">View Details</a>
+              <a href="#" class="btn btn-default">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-img-top">
+            <span style="font-size:100px;">&#128186;</span>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Chair</h5>
+            <p class="card-text">For sitting and much much more!</p>
+            <div class="card-links">
+              <a href="#" class="btn btn-primary">View Details</a>
+              <a href="#" class="btn btn-default">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shirts Page -->
+  <div class="container tshirts">
+    <h3>Shirts</h3>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-img-top">
+            <span style="font-size:100px;">&#128085;</span>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Classic T-Shirt</h5>
+            <p class="card-text">100% cotton t-shirts available in various colors and sizes.</p>
+            <div class="card-links">
+              <a href="#" class="btn btn-primary">View Details</a>
+              <a href="#" class="btn btn-default">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pants Page -->
+  <div class="container pants">
+    <h3>Pants</h3>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-img-top">
+            <span style="font-size:100px;">&#128086;</span>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Classic Jeans</h5>
+            <p class="card-text">Comfortable and stylish jeans for everyday wear.</p>
+            <div class="card-links">
+              <a href="#" class="btn btn-primary">View Details</a>
+              <a href="#" class="btn btn-default">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sell Page -->
+  <div class="container sell">
+    <h3>Sell Your Items</h3>
+    <p>Turn your closet into cash! List your gently used clothing and accessories.</p>
+    <div class="row">
+      <div class="col-md-6">
+        <form id="sellForm">
+          <div class="form-group">
+            <label for="itemName">Item Name</label>
+            <input type="text" class="form-control" id="itemName" required>
+          </div>
+          <div class="form-group">
+            <label for="itemDescription">Description</label>
+            <textarea class="form-control" id="itemDescription" rows="3" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="itemPrice">Price ($)</label>
+            <input type="number" class="form-control" id="itemPrice" min="0" step="0.01" required>
+          </div>
+          <div class="form-group">
+            <label for="itemImage">Upload Images</label>
+            <input type="file" class="form-control-file" id="itemImage" multiple>
+          </div>
+          <button type="submit" class="btn btn-primary">List Item</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sign Up Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="signupModalLabel">Sign Up</h4>
+        </div>
+        <div class="modal-body">
+          <form id="signupForm">
+            <div class="form-group">
+              <label for="signupUsername">Username</label>
+              <input type="text" class="form-control" id="signupUsername" required>
+            </div>
+            <div class="form-group">
+              <label for="signupEmail">Email address</label>
+              <input type="email" class="form-control" id="signupEmail" required>
+            </div>
+            <div class="form-group">
+              <label for="signupPassword">Password</label>
+              <input type="password" class="form-control" id="signupPassword" required>
+            </div>
+            <div class="form-group">
+              <label for="signupConfirmPassword">Confirm Password</label>
+              <input type="password" class="form-control" id="signupConfirmPassword" required>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" required> I agree to the Terms and Conditions
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Create Account</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="loginModalLabel">Login</h4>
+        </div>
+        <div class="modal-body">
+          <form id="loginForm">
+            <div class="form-group">
+              <label for="loginEmail">Email address</label>
+              <input type="email" class="form-control" id="loginEmail" required>
+            </div>
+            <div class="form-group">
+              <label for="loginPassword">Password</label>
+              <input type="password" class="form-control" id="loginPassword" required>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Remember me
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+            <p class="help-block">
+              <a href="#" onclick="showForgotPasswordModal(); return false;">Forgot Password?</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Page -->
+  <div class="container contact">
+    <h3>Contact Us</h3>
+    <div class="row">
+      <div class="col-md-6">
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h4>Our Location</h4>
+        <p>123 Fashion Street<br>Style City, SC 12345</p>
+        <h4>Contact Information</h4>
+        <p>Email: contact@fashionstore.com<br>Phone: (555) 123-4567</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- History Page -->
+  <div class="container history">
+    <h3>Our History</h3>
+    <div class="row">
+      <div class="col-md-12">
+        <p>Founded in 2020, Fashion Store has grown from a small local boutique to a nationwide fashion destination. Our journey began with a simple mission: to provide quality fashion at affordable prices.</p>
+        <h4>Timeline</h4>
+        <ul class="list-group">
+          <li class="list-group-item">2020 - Company founded</li>
+          <li class="list-group-item">2021 - Launched online store</li>
+          <li class="list-group-item">2022 - Expanded to nationwide shipping</li>
+          <li class="list-group-item">2023 - Introduced sustainable fashion line</li>
+          <li class="list-group-item">2024 - Reached 100,000 customers</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mission Page -->
+  <div class="container mission">
+    <h3>Our Mission</h3>
+    <div class="row">
+      <div class="col-md-12">
+        <p>Our mission is to provide high-quality, sustainable fashion that empowers individuals to express their unique style while maintaining environmental responsibility.</p>
+        <h4>Core Values</h4>
+        <ul class="list-group">
+          <li class="list-group-item">Quality First</li>
+          <li class="list-group-item">Customer Satisfaction</li>
+          <li class="list-group-item">Environmental Responsibility</li>
+          <li class="list-group-item">Innovation in Fashion</li>
+          <li class="list-group-item">Community Engagement</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Copyright © 2025. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
